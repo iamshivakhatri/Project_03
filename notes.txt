@@ -1,0 +1,1 @@
+nodemon --require dotenv/config  server.js   to run the server

@@ -4,6 +4,7 @@ import Locations from './pages/Locations'
 import LocationEvents from './pages/LocationEvents'
 import Events from './pages/Events'
 import './App.css'
+import LocationsAPI from './services/LocationsAPI'
 
 const App = () => {
   let element = useRoutes([
@@ -12,25 +13,26 @@ const App = () => {
       element: <Locations />
     },
     {
-      path: '/echolounge',
+      path: '/sanfranciso',
       element: <LocationEvents index={1} />
     },
     {
-      path: '/houseofblues',
+      path: '/ultramusic',
       element: <LocationEvents index={2} />
     },
     {
-      path: '/pavilion',
+      path: '/carnegiehall',
       element: <LocationEvents index={3} />
     },
     {
-      path: '/americanairlines',
+      path: '/centralpark',
       element: <LocationEvents index={4} />
     },
     {
       path: '/events',
       element: <Events />
     }
+    
   ])
 
   return (
@@ -42,6 +44,7 @@ const App = () => {
         <div className='header-buttons'>
           <Link to='/' role='button'>Home</Link>
           <Link to='/events' role='button'>Events</Link>
+        
         </div>
       </header>
 

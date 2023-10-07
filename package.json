@@ -2,11 +2,12 @@
   "name": "unitygridplaza",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"cd client && vite\" \"cd server && nodemon server\"", 
+    "dev": "concurrently \"cd client && vite\" \"cd server && nodemon server\"",
+    "client": "cd client && vite",
     "start": "cd server && node server",
     "build": "cd client && vite build",
-    "reset": "cd server/config && node reset.js" 
-
+    "reset": "cd server/config && node reset.js",
+    "delete": "cd server/config && node delete.js"
   },
   "dependencies": {
     "@picocss/pico": "^1.5.7",

@@ -1,6 +1,6 @@
-import { pool } from './db.js';
+import { pool } from '../config/database.js'
 import '../config/dotenv.js'
-import eventsData from './data/events.js'
+import eventsData from '../data/events.js'
 
 
 const createEventsTable = async () => {
@@ -9,10 +9,11 @@ const createEventsTable = async () => {
 
     CREATE TABLE IF NOT EXISTS events (
       id SERIAL PRIMARY KEY,
+      image TEXT NULL,
       name TEXT NOT NULL,
       date TEXT NOT NULL,
       location TEXT NOT NULL,
-      performer TEXT NULL,
+      performer TEXT NULL
     )
   `
 
@@ -29,10 +30,11 @@ const seedEventsTable = async () => {
 
   eventsData.forEach((event) => {
     const insertQuery = {
-      text: 'INSERT INTO events (name, date, location, performer) VALUES ($1, $2, $3, $4)'
+      text: 'INSERT INTO events (image, name, date, location, performer) VALUES ($1, $2, $3, $4, $5)'
     }
 
     const values = [
+      event.image,
       event.name,
       event.date,
       event.location,

@@ -48,6 +48,9 @@ GIF created with ...  GIF tool here
 
 Describe any challenges encountered while building the app or any additional context you'd like to add.
 
+It was little tough to contiue the work. It would have been much easier if i could do my whole new project instead.
+
+
 ## License
 
 Copyright [2023] [Shiva Khatri]

@@ -1,1 +1,6 @@
 nodemon --require dotenv/config  server.js   to run the server
+{/**"dev": "concurrently \"cd client && vite\" \"cd server && nodemon server\"",*/}
+
+nodemon --require dotenv/config  server.js   to run the server
+
+"client": "cd client && vite", to run the client from root

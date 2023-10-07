@@ -34,6 +34,8 @@ const App = () => {
     }
     
   ])
+    
+
 
   return (
     <div className='app'>
@@ -44,6 +46,7 @@ const App = () => {
         <div className='header-buttons'>
           <Link to='/' role='button'>Home</Link>
           <Link to='/events' role='button'>Events</Link>
+          
         
         </div>
       </header>
@@ -56,3 +59,33 @@ const App = () => {
 }
 
 export default App
+
+/**
+ let element = useRoutes([
+    {
+      path: '/',
+      element: <Locations />
+    },
+    {
+      path: '/sanfranciso',
+      element: <LocationEvents index={1} />
+    },
+    {
+      path: '/ultramusic',
+      element: <LocationEvents index={2} />
+    },
+    {
+      path: '/carnegiehall',
+      element: <LocationEvents index={3} />
+    },
+    {
+      path: '/centralpark',
+      element: <LocationEvents index={4} />
+    },
+    {
+      path: '/events',
+      element: <Events />
+    }
+    
+  ])
+ */

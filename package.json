@@ -2,7 +2,7 @@
   "name": "unitygridplaza",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"cd client && vite\" \"cd server && nodemon server\"",
+    "dev": "concurrently \"cd client && vite\" \"npm run reset\" \"cd server && nodemon --require dotenv/config server.js\"",
     "client": "cd client && vite",
     "start": "cd server && node server",
     "build": "cd client && vite build",
@@ -29,3 +29,4 @@
     "vite": "^4.2.0"
   }
 }
+

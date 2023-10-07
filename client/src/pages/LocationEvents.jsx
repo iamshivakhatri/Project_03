@@ -46,8 +46,8 @@ const LocationEvents = ({index}) => {
                 </div>
 
                 <div className='location-info'>
-                    <h2>Central Park New York 10019</h2>
-                    <p>  New York, NY </p>
+                    <h2>AT&T Stadium</h2>
+                    <p>  Arlington, TX </p>
                 </div>
             </header>
 
